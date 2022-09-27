@@ -1,21 +1,10 @@
 ## Toubleshooting
-### Steps to resolve 
+### Steps to resolve error:
 ``` js 
 npm ERR! code ERR_TLS_CERT_ALTNAME_INVALID 
 ```
 ---
 <p>After getting the above error, I carried out the following steps:</p>
-
-<p>1: Remove node_modules folder if it exits</p>
-
-``` js
-npm run dev
-```
-
-<p>2: Remove the package-lock.json file</p>
-```bash
-rm package-lock.json
-```
 
 <ol>
   <li>Remove node_modules folder if it exits
@@ -55,20 +44,52 @@ npm cache clean --force
 
    </ol>
   </li>
+  <li>In <code>client/src/components/CreateGroups.tsx</code>, on line 49, update <code>catch (e)</code> block
+    <ol>
+
+ ``` diff
+ - } catch (e) {
+ + } catch (e: any) { 
+ ```
+
+   </ol>
+  </li>
+  <li>In <code>client/src/components/GroupsList.tsx</code>, on line 31, update <code>catch (e)</code> block
+    <ol>
+
+ ``` diff
+ - } catch (e) {
+ + } catch (e: any) { 
+ ```
+
+   </ol>
+  </li>
+  <li>Install dependencies
+    <ol>
+
+ ``` js
+ npm install
+ ```
+
+   </ol>
+  </li>
+  <li>Insert your apiEndpoint in <code>client/src/config.ts</code>
+
+ ``` ts
+ export const apiEndpoint = 'insertHere' 
+ ```
+
+   </ol>
+  </li>
+  <li>Run the start script
+
+ ``` js
+ npm run start 
+ ```
+
+   </ol>
+  </li>
 
 
   
 </ol>
-- rm -rf node_modules
-- rm package-lock.json
-- npm cache clean --force
-- 
-npm install typescript@^4.8.3
-go to client/src/components/CreateGroups.tsx, on line 49, update catch (e) to catch (e: any)
-go to client/src/components/GroupsList.tsx, on line 31, update catch (e) to catch (e: any)
-npm install --force
-
-
-```bash
-rm -rf node_modules
-```
