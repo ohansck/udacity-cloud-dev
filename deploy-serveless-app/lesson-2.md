@@ -1,5 +1,5 @@
-## Toubleshooting
-### Steps to resolve error:
+## Toubleshooting (@Executioner on slack)
+### Steps to resolve error in lesson 2 with <code>client</code>:
 ``` js 
 npm ERR! code ERR_TLS_CERT_ALTNAME_INVALID 
 ```
