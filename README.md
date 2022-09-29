@@ -7,15 +7,15 @@ Useful links:
 <ol>
 <li>
 
-Lesson 2 Client [troubleshooting](https://github.com/ohansck/udacity-cloud-dev/deploy-serveless-app)
+Lesson 2 Client [troubleshooting](https://github.com/ohansck/udacity-cloud-dev/tree/main/deploy-serveless-app)
 </li>
 <li>
 
-Lesson 2 - POST Method [troubleshooting](https://github.com/ohansck/udacity-cloud-dev/deploy-serveless-app)
+Lesson 2 - POST Method [troubleshooting](https://github.com/ohansck/udacity-cloud-dev/tree/main/deploy-serveless-app)
 </li>
 <li>
 
-Save AWS credits - Create clusters with [Linode](https://github.com/ohansck/udacity-cloud-dev/monolith-to-microservices)
+Save AWS credits - Create clusters with [Linode](https://github.com/ohansck/udacity-cloud-dev/tree/main/monolith-to-microservices)
 </li>
 </ol>
 
